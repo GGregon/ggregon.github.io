@@ -12,7 +12,7 @@
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.06), 0 1px 2px rgba(0, 0, 0, 0.04);
   --shadow-hover: 0 8px 20px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.05);
   --radius: 10px;
-  --max-width: 860px;
+  --max-width: 1180px;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Consolas, monospace;
 }
@@ -130,9 +130,28 @@ footer.site-footer {
   font-size: 0.9rem;
 }
 
+/* ---------- Top grid (hero + about, side by side) ---------- */
+.top-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 3.5rem;
+  align-items: start;
+  margin-bottom: 3.5rem;
+}
+.top-grid > section { margin-bottom: 0; }
+
+@media (max-width: 900px) {
+  .top-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 0;
+  }
+  .top-grid > section { margin-bottom: 3.5rem; }
+}
+
 /* ---------- Hero ---------- */
 .hero {
-  padding: 2rem 0 3rem;
+  padding: 2rem 0 0;
 }
 .hero h1 {
   font-size: 2.25rem;
@@ -251,12 +270,20 @@ section { margin-bottom: 3.5rem; }
 .timeline-item h3 { margin: 0; font-size: 1.05rem; }
 .timeline-item .meta { color: var(--text-muted); font-size: 0.88rem; margin: 0.15rem 0 0.5rem; }
 
+/* ---------- Full-bleed utility (breaks a section out to viewport width) ---------- */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  box-sizing: border-box;
+  padding: 0 clamp(1.25rem, 5vw, 4rem);
+}
+
 /* ---------- Horizontal experience timeline ---------- */
 .timeline-track-wrap {
   overflow-x: auto;
   overflow-y: visible;
   padding: 1.75rem 0 0.75rem;
-  margin: 0 -0.25rem;
   scrollbar-width: thin;
   scrollbar-color: var(--border) transparent;
 }
