@@ -1,4 +1,4 @@
-# Your Name — Portfolio & Blog
+# Gabriel Gregon — Portfolio & Blog
 
 Personal portfolio/résumé + blog, built with plain HTML/CSS/JS and hosted on
 GitHub Pages.
@@ -40,18 +40,18 @@ Then visit `http://localhost:8000`.
 
 ## Deploying to GitHub Pages
 
-1. Create a new GitHub repo (e.g. `yourusername.github.io` for a user site,
+1. Create a new GitHub repo (e.g. `GGregon.github.io` for a user site,
    or any name for a project site).
 2. Push this repo to it:
    ```
-   git remote add origin https://github.com/yourusername/REPO_NAME.git
+   git remote add origin https://github.com/GGregon/REPO_NAME.git
    git branch -M main
    git push -u origin main
    ```
 3. In the repo on GitHub: **Settings → Pages → Source**, select the `main`
    branch and `/ (root)` folder, then save.
-4. Your site will be live at `https://yourusername.github.io/` (user site) or
-   `https://yourusername.github.io/REPO_NAME/` (project site) within a
+4. Your site will be live at `https://GGregon.github.io/` (user site) or
+   `https://GGregon.github.io/REPO_NAME/` (project site) within a
    minute or two.
 
 ### Custom domain (optional)
