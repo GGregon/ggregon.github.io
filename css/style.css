@@ -128,7 +128,7 @@ footer.site-footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 3.5rem;
-  align-items: start;
+  align-items: stretch;
   margin-bottom: 3.5rem;
 }
 .top-grid > section { margin-bottom: 0; }
@@ -140,11 +140,18 @@ footer.site-footer {
     margin-bottom: 0;
   }
   .top-grid > section { margin-bottom: 3.5rem; }
+  .hero { display: block; }
 }
 
 /* ---------- Hero ---------- */
+/* Stretched to match the About column's height (via .top-grid's
+   align-items: stretch) and laid out so the icon row sits flush with
+   the bottom of that column instead of leaving it short. */
 .hero {
-  padding: 2rem 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
 }
 .hero h1 {
   font-size: 2.25rem;
