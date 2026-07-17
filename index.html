@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio and resume of Your Name." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">Your Name</a>
+      <nav class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#projects">Projects</a></li>
+          <li><a href="blog/index.html">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle color theme">☾ Dark</button>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Your Name</h1>
+      <p class="subtitle">Your Professional Title (e.g. Data Analyst / Software Engineer)</p>
+      <p class="tagline">
+        One or two sentences describing what you do, the value you bring, and
+        what you're focused on right now. Keep it concrete and specific.
+      </p>
+      <div class="actions">
+        <a class="btn btn-primary" href="mailto:you@example.com">Email me</a>
+        <a class="btn btn-ghost" href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-ghost" href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="assets/resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        A short paragraph about your background, what got you into your field,
+        and what you're good at. Two to four sentences is plenty — this isn't
+        the place for your full life story.
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="timeline-item">
+        <h3>Job Title — Company Name</h3>
+        <p class="meta">Month Year – Present · City, Country</p>
+        <p>
+          One or two bullet-style sentences on scope and impact. Prefer
+          concrete outcomes ("reduced X by Y%") over vague responsibilities.
+        </p>
+      </div>
+
+      <div class="timeline-item">
+        <h3>Previous Job Title — Company Name</h3>
+        <p class="meta">Month Year – Month Year · City, Country</p>
+        <p>Same format: scope, then impact.</p>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="card">
+        <h3>Project Name</h3>
+        <p class="meta"><a href="https://github.com/yourusername/project" target="_blank" rel="noopener">Repo →</a></p>
+        <p>One or two sentences on what it does and why it's interesting.</p>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">Data Engineering</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <h3>Another Project</h3>
+        <p class="meta"><a href="https://github.com/yourusername/project2" target="_blank" rel="noopener">Repo →</a></p>
+        <p>Same format as above.</p>
+        <div class="tags">
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="tags">
+        <span class="tag">Skill One</span>
+        <span class="tag">Skill Two</span>
+        <span class="tag">Skill Three</span>
+        <span class="tag">Skill Four</span>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        Best reached at <a href="mailto:you@example.com">you@example.com</a>,
+        or find me on
+        <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a>
+        and
+        <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener">LinkedIn</a>.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      &copy; <span id="year"></span> Your Name. Built with plain HTML/CSS/JS, hosted on GitHub Pages.
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
