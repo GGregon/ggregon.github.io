@@ -123,52 +123,37 @@ footer.site-footer {
   font-size: 0.9rem;
 }
 
-/* ---------- Top grid (hero + about, side by side) ---------- */
-.top-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 3.5rem;
-  align-items: stretch;
-  margin-bottom: 3.5rem;
-}
-.top-grid > section { margin-bottom: 0; }
-
-@media (max-width: 900px) {
-  .top-grid {
-    grid-template-columns: 1fr;
-    gap: 0;
-    margin-bottom: 0;
-  }
-  .top-grid > section { margin-bottom: 3.5rem; }
-  .hero { display: block; }
-}
-
 /* ---------- Hero ---------- */
-/* Stretched to match the About column's height (via .top-grid's
-   align-items: stretch) and laid out so the icon row sits flush with
-   the bottom of that column instead of leaving it short. */
-.hero {
+.hero { padding-top: 2.5rem; }
+.hero-row {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
-  padding: 0;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
 }
 .hero h1 {
-  font-size: 2.25rem;
-  margin: 0 0 0.4rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text);
+  margin: 0;
   letter-spacing: -0.02em;
 }
 .hero .subtitle {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: var(--text-muted);
-  margin: 0 0 1.25rem;
+  margin: 0 0 1.1rem;
 }
-.hero .tagline {
-  max-width: 640px;
-  color: var(--text-muted);
+.hero .bio {
+  max-width: 700px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text);
+  margin: 0;
 }
 .hero .actions {
-  margin-top: 1.5rem;
   display: flex;
   align-items: center;
   gap: 1.25rem;
@@ -180,6 +165,10 @@ footer.site-footer {
 }
 .hero .actions a:hover { color: var(--accent); transform: translateY(-2px); }
 .hero .actions .icon { width: 1.6rem; height: 1.6rem; }
+
+@media (max-width: 600px) {
+  .hero-row .actions { order: 2; }
+}
 
 /* ---------- Sections ---------- */
 section { margin-bottom: 3.5rem; }
@@ -193,7 +182,17 @@ section { margin-bottom: 3.5rem; }
 }
 .section-heading h2 {
   font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text);
   margin: 0;
+}
+
+/* Generic muted caption/note line, used wherever a secondary one-liner
+   sits under a section heading (independent of .hero). */
+.tagline {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
 }
 
 /* ---------- Icons ---------- */
@@ -236,8 +235,12 @@ section { margin-bottom: 3.5rem; }
   font-size: 1.05rem;
 }
 .card h3 .icon { color: var(--accent); flex-shrink: 0; }
-.card .meta { color: var(--text-muted); font-size: 0.88rem; margin-bottom: 0.5rem; }
 .card p:last-child { margin-bottom: 0; }
+
+/* Shared muted-caption style for any secondary date/label line
+   (card meta, timeline meta, blog post meta, contact labels). */
+.meta { color: var(--text-muted); font-size: 0.85rem; }
+.card .meta { margin-bottom: 0.5rem; }
 
 .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.6rem; }
 .tag {
@@ -251,7 +254,7 @@ section { margin-bottom: 3.5rem; }
 
 .timeline-item { margin-bottom: 1.5rem; }
 .timeline-item h3 { margin: 0; font-size: 1.05rem; }
-.timeline-item .meta { color: var(--text-muted); font-size: 0.88rem; margin: 0.15rem 0 0.5rem; }
+.timeline-item .meta { margin: 0.15rem 0 0.5rem; }
 
 /* ---------- Horizontal experience timeline ---------- */
 .timeline-track-wrap {
@@ -417,12 +420,16 @@ section { margin-bottom: 3.5rem; }
   border-bottom: 1px solid var(--border);
 }
 .post-list-item:last-child { border-bottom: none; }
-.post-list-item h3 { margin: 0 0 0.25rem; font-size: 1.1rem; }
-.post-list-item .meta { color: var(--text-muted); font-size: 0.85rem; }
+.post-list-item h3 { margin: 0 0 0.25rem; font-size: 1.05rem; }
 
 .post-header { margin-bottom: 2rem; }
-.post-header h1 { margin-bottom: 0.3rem; }
-.post-header .meta { color: var(--text-muted); font-size: 0.9rem; }
+.post-header h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin: 0 0 0.3rem;
+}
 .post-body h2 { font-size: 1.3rem; margin-top: 2rem; margin-bottom: 0.75rem; }
 .post-body pre {
   background: var(--bg-alt);
@@ -456,13 +463,11 @@ section { margin-bottom: 3.5rem; }
   gap: 0.7rem;
 }
 .contact-list .icon { width: 1.15rem; height: 1.15rem; color: var(--accent); flex-shrink: 0; }
-.contact-list a,
-.contact-list span.value {
+.contact-list a {
   color: var(--text);
   font-weight: 500;
 }
 .contact-list a:hover { color: var(--accent); }
-.contact-list .label { color: var(--text-muted); font-size: 0.85rem; }
 
 /* ---------- Scroll reveal ---------- */
 .reveal {
