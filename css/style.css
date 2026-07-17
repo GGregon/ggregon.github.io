@@ -193,19 +193,6 @@ section { margin-bottom: 3.5rem; }
   margin: 0;
 }
 
-.icon-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem;
-  height: 2rem;
-  flex-shrink: 0;
-  border-radius: 8px;
-  background: var(--accent-tint);
-  color: var(--accent);
-}
-.icon-badge .icon { width: 1.05rem; height: 1.05rem; }
-
 /* ---------- Icons ---------- */
 .icon {
   display: inline-block;
@@ -216,6 +203,13 @@ section { margin-bottom: 3.5rem; }
 }
 .icon svg { width: 100%; height: 100%; display: block; }
 .btn .icon { width: 0.95em; height: 0.95em; margin-right: 0.45rem; }
+
+.section-heading .icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  color: var(--accent);
+  flex-shrink: 0;
+}
 
 /* ---------- Cards / lists ---------- */
 .card {
@@ -301,8 +295,7 @@ section { margin-bottom: 3.5rem; }
   align-items: center;
   gap: 0.7rem;
 }
-.contact-list .icon-badge { width: 1.75rem; height: 1.75rem; }
-.contact-list .icon-badge .icon { width: 0.95rem; height: 0.95rem; }
+.contact-list .icon { width: 1.15rem; height: 1.15rem; color: var(--accent); flex-shrink: 0; }
 .contact-list a,
 .contact-list span.value {
   color: var(--text);
