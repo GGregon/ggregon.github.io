@@ -255,9 +255,15 @@ section { margin-bottom: 3.5rem; }
 .timeline-track-wrap {
   overflow-x: auto;
   overflow-y: visible;
-  padding: 1.75rem 0 0.5rem;
+  padding: 1.75rem 0 0.75rem;
   margin: 0 -0.25rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
 }
+.timeline-track-wrap::-webkit-scrollbar { height: 6px; }
+.timeline-track-wrap::-webkit-scrollbar-track { background: transparent; }
+.timeline-track-wrap::-webkit-scrollbar-thumb { background: var(--border); border-radius: 999px; }
+
 .timeline-track {
   list-style: none;
   margin: 0;
@@ -267,27 +273,36 @@ section { margin-bottom: 3.5rem; }
 }
 .track-item {
   position: relative;
-  flex: 1 1 160px;
-  min-width: 150px;
+  flex: 1 1 140px;
+  min-width: 128px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0 0.85rem;
+  padding: 0 0.6rem;
 }
-.track-top { margin-bottom: 1.2rem; min-height: 3.1rem; }
+/* Fixed height + bottom-aligned content so the dot row lines up across
+   items even when a company name wraps to two lines. */
+.track-top {
+  height: 4.3rem;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
 .track-company {
   display: block;
   font-weight: 700;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
+  line-height: 1.25;
   color: var(--text);
 }
 .track-company:hover { color: var(--accent); text-decoration: none; }
 .track-role {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   color: var(--text-muted);
   margin-top: 0.2rem;
-  line-height: 1.35;
+  line-height: 1.3;
 }
 
 .track-node {
@@ -385,7 +400,7 @@ section { margin-bottom: 3.5rem; }
 .track-item:last-child .track-tooltip::after { left: auto; right: 7px; transform: none; }
 
 @media (max-width: 700px) {
-  .track-item { flex: 0 0 150px; }
+  .track-item { flex: 0 0 140px; }
 }
 
 /* ---------- Blog ---------- */
