@@ -254,52 +254,9 @@ footer.site-footer {
   text-align: justify;
 }
 
-/* ---------- Sections below the fold (Skills / Education / Languages / Contact) ---------- */
 section { margin-bottom: 2.5rem; }
 
-.card {
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 1.1rem 1.3rem;
-  margin-bottom: 0.75rem;
-}
-.card h3 { margin: 0 0 0.25rem; font-size: 0.95rem; color: var(--text); }
-.card p:last-child { margin-bottom: 0; }
-
 .meta { color: var(--text-muted); font-size: 0.8rem; }
-.card .meta { margin-bottom: 0.4rem; }
-
-.tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
-.tag {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  padding: 0.15rem 0.55rem;
-  border-radius: 999px;
-}
-
-.timeline-item { margin-bottom: 1.2rem; }
-.timeline-item h3 { margin: 0; font-size: 0.95rem; color: var(--text); }
-.timeline-item .meta { margin: 0.15rem 0 0.4rem; }
-
-/* Muted caption/note line under a section title */
-.tagline {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  margin: 0 0 1.25rem;
-}
-
-.contact-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.contact-list a { color: var(--text); font-weight: 500; }
 
 /* ---------- Blog ---------- */
 .post-list-item {
