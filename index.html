@@ -12,150 +12,116 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <nav class="site-nav">
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="blog/index.html">Blog</a></li>
-          <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <button class="theme-toggle" data-theme-toggle aria-label="Toggle color theme">☾ Dark</button>
-    </div>
+  <header class="topbar container">
+    <a href="mailto:ggregon@gmail.com" aria-label="Email me" title="Email me"><span class="icon" data-icon="mail"></span></a>
+    <a href="https://github.com/GGregon" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><span class="icon" data-icon="github"></span></a>
+    <a href="https://linkedin.com/in/gabriel-gregon" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><span class="icon" data-icon="linkedin"></span></a>
+    <a href="assets/resume.pdf" target="_blank" rel="noopener" aria-label="Download résumé" title="Download résumé"><span class="icon" data-icon="download"></span></a>
   </header>
 
   <main class="container">
-    <section class="hero reveal">
-      <div class="hero-row">
-        <h1>Gabriel Gregon</h1>
-        <div class="actions">
-          <a href="mailto:ggregon@gmail.com" aria-label="Email me" title="Email me"><span class="icon" data-icon="mail"></span></a>
-          <a href="https://github.com/GGregon" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><span class="icon" data-icon="github"></span></a>
-          <a href="https://linkedin.com/in/gabriel-gregon" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn"><span class="icon" data-icon="linkedin"></span></a>
-          <a href="assets/resume.pdf" target="_blank" rel="noopener" aria-label="Download résumé" title="Download résumé"><span class="icon" data-icon="download"></span></a>
-        </div>
+    <div class="profile-header">
+      <h1 class="profile-name">Gabriel Gregon</h1>
+      <div class="profile-meta">
+        <span class="profile-role">Head of Data at EdukDados</span>
+        <span class="profile-degree">B.Sc. in Electronics and Computer Engineering, UFRJ</span>
       </div>
-      <p class="subtitle">Head of Data at EdukDados · Data Scientist &amp; Product Analytics</p>
-      <p class="bio">
-        Data Scientist and Product Analytics professional with 5+ years driving
-        product and business decisions through data-driven analysis,
-        experimentation, and scalable data systems. I build dashboards,
-        analytical tools, and data products with SQL and Python, backed by
-        strong foundations in Machine Learning, Statistics, and experimental
-        design — and a track record of partnering with business and product
-        leaders to turn insight into impact.
-      </p>
-    </section>
+    </div>
 
-    <section id="experience" class="reveal">
-      <div class="section-heading">
-        <span class="icon" data-icon="briefcase"></span>
-        <h2>Experience</h2>
+    <div class="main-grid">
+      <div class="col-left">
+        <p class="about-text">
+          Data Scientist and Product Analytics professional with 5+ years driving
+          product and business decisions through data-driven analysis,
+          experimentation, and scalable data systems. I build dashboards,
+          analytical tools, and data products with SQL and Python, backed by
+          strong foundations in Machine Learning, Statistics, and experimental
+          design — and a track record of partnering with business and product
+          leaders to turn insight into impact.
+        </p>
+
+        <section class="stack-section">
+          <h2 class="section-title">Blogs and Posts</h2>
+          <div class="card-grid">
+            <a class="preview-card" href="blog/posts/welcome.html">Welcome to my blog</a>
+            <div class="preview-card"></div>
+            <div class="preview-card"></div>
+            <div class="preview-card"></div>
+          </div>
+        </section>
+
+        <section class="stack-section">
+          <h2 class="section-title">Playground Projects</h2>
+          <div class="card-grid">
+            <a class="preview-card" href="https://github.com/GGregon" target="_blank" rel="noopener">BECA — Adaptive Diagnostic Platform</a>
+            <div class="preview-card"></div>
+            <div class="preview-card"></div>
+            <div class="preview-card"></div>
+          </div>
+        </section>
       </div>
 
-      <p class="tagline">
-        Full role-by-role detail is in the <a href="assets/resume.pdf" target="_blank" rel="noopener">résumé</a> —
-        hover (or focus) a point on the timeline below for a quick summary.
-      </p>
-
-      <div class="timeline-track-wrap">
-        <ol class="timeline-track">
-          <li class="track-item">
-            <div class="track-top">
-              <a class="track-company" href="https://gruposaltaedu.com/" target="_blank" rel="noopener">Eleva Educação / Grupo Salta</a>
-              <div class="track-role">Physics Teacher &amp; Academic Coordinator</div>
+      <div class="col-right">
+        <h2 class="experience-title">Work Experience</h2>
+        <ol class="exp-timeline">
+          <li class="exp-row">
+            <div class="exp-role">Physics Teacher &amp; Academic Coordinator</div>
+            <div class="exp-marker-col"><span class="exp-marker"></span></div>
+            <div class="exp-content">
+              <span class="exp-date">Jan 2015</span>
+              <p class="exp-company"><a href="https://gruposaltaedu.com/" target="_blank" rel="noopener">Eleva Educação / Grupo Salta</a></p>
+              <p class="exp-desc">Brazil's largest K-12 education group, operating multiple private school networks nationwide.</p>
             </div>
-            <div class="track-node" tabindex="0" aria-label="Taught Physics for competitive engineering and military-prep programs (IME, ITA, AFA, EFOMM); coordinated advanced-track instruction and curriculum design.">
-              <span class="track-dot"></span>
-              <span class="track-tooltip" aria-hidden="true">Taught Physics for competitive engineering and military-prep programs (IME, ITA, AFA, EFOMM); coordinated advanced-track instruction and curriculum design.</span>
-            </div>
-            <div class="track-date">Jan 2015</div>
           </li>
 
-          <li class="track-item">
-            <div class="track-top">
-              <a class="track-company" href="https://fgvenergia.fgv.br/" target="_blank" rel="noopener">FGV Energia</a>
-              <div class="track-role">Data Analytics Intern</div>
+          <li class="exp-row">
+            <div class="exp-role">Data Analytics Intern</div>
+            <div class="exp-marker-col"><span class="exp-marker"></span></div>
+            <div class="exp-content">
+              <span class="exp-date">Jan 2022</span>
+              <p class="exp-company"><a href="https://fgvenergia.fgv.br/" target="_blank" rel="noopener">FGV Energia</a></p>
+              <p class="exp-desc">One of Brazil's foremost research and education institutions, known for its work in administration, economics, law, and public policy.</p>
             </div>
-            <div class="track-node" tabindex="0" aria-label="Built a centralized energy-sector data warehouse and dashboards tracking volume flows, efficiency, and logistics performance.">
-              <span class="track-dot"></span>
-              <span class="track-tooltip" aria-hidden="true">Built a centralized energy-sector data warehouse and dashboards tracking volume flows, efficiency, and logistics performance.</span>
-            </div>
-            <div class="track-date">Jan 2022</div>
           </li>
 
-          <li class="track-item">
-            <div class="track-top">
-              <a class="track-company" href="https://www.leggio.com.br/" target="_blank" rel="noopener">Leggio Group</a>
-              <div class="track-role">Data Analyst / Analytics Engineer</div>
+          <li class="exp-row">
+            <div class="exp-role">Data Analyst / Analytics Engineer</div>
+            <div class="exp-marker-col"><span class="exp-marker"></span></div>
+            <div class="exp-content">
+              <span class="exp-date">May 2022</span>
+              <p class="exp-company"><a href="https://www.leggio.com.br/" target="_blank" rel="noopener">Leggio Group</a></p>
+              <p class="exp-desc">A leading Brazilian consultancy specializing in the oil and gas market, also active in infrastructure and supply chains.</p>
             </div>
-            <div class="track-node" tabindex="0" aria-label="Built end-to-end data solutions and a real-time geospatial platform for IBP, plus dashboards used by 20+ stakeholders across consulting projects.">
-              <span class="track-dot"></span>
-              <span class="track-tooltip" aria-hidden="true">Built end-to-end data solutions and a real-time geospatial platform for IBP, plus dashboards used by 20+ stakeholders across consulting projects.</span>
-            </div>
-            <div class="track-date">May 2022</div>
           </li>
 
-          <li class="track-item">
-            <div class="track-top">
-              <a class="track-company" href="https://wildlifestudios.com/" target="_blank" rel="noopener">Wildlife Studios</a>
-              <div class="track-role">Data Scientist</div>
+          <li class="exp-row">
+            <div class="exp-role">Data Scientist</div>
+            <div class="exp-marker-col"><span class="exp-marker"></span></div>
+            <div class="exp-content">
+              <span class="exp-date">Jul 2025</span>
+              <p class="exp-company"><a href="https://wildlifestudios.com/" target="_blank" rel="noopener">Wildlife Studios</a></p>
+              <p class="exp-desc">One of Brazil's largest startups and among the world's ten biggest mobile game developers.</p>
             </div>
-            <div class="track-node" tabindex="0" aria-label="Led experimentation for live mobile game features, driving an 18% lift in player progression and 4% lift in retention.">
-              <span class="track-dot"></span>
-              <span class="track-tooltip" aria-hidden="true">Led experimentation for live mobile game features, driving an 18% lift in player progression and 4% lift in retention.</span>
-            </div>
-            <div class="track-date">Jul 2025</div>
           </li>
 
-          <li class="track-item is-current">
-            <div class="track-top">
-              <a class="track-company" href="https://edukdados.com.br/" target="_blank" rel="noopener">EdukDados</a>
-              <div class="track-role">Head of Data</div>
+          <li class="exp-row is-current">
+            <div class="exp-role">Head of Data</div>
+            <div class="exp-marker-col"><span class="exp-marker"></span></div>
+            <div class="exp-content">
+              <span class="exp-date">Apr 2026</span>
+              <p class="exp-company"><a href="https://edukdados.com.br/" target="_blank" rel="noopener">EdukDados</a></p>
+              <p class="exp-desc">A market-intelligence platform for the education sector, using data to support strategic decisions for schools and companies.</p>
             </div>
-            <div class="track-node" tabindex="0" aria-label="Leading architecture and modernization of EdukDados' data platform — data engineering, analytics, and data science powering market intelligence and data-driven products.">
-              <span class="track-dot"></span>
-              <span class="track-tooltip" aria-hidden="true">Leading architecture and modernization of EdukDados' data platform — data engineering, analytics, and data science powering market intelligence and data-driven products.</span>
-            </div>
-            <div class="track-date">Apr 2026</div>
           </li>
         </ol>
       </div>
-    </section>
+    </div>
 
-    <section id="projects" class="reveal">
-      <div class="section-heading">
-        <span class="icon" data-icon="code"></span>
-        <h2>Projects</h2>
-      </div>
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
 
       <div class="card">
-        <h3>BECA — Adaptive Diagnostic Assessment Platform</h3>
-        <p>
-          A Python-based adaptive diagnostic tool for Calculus and Physics,
-          generating personalized assessments based on student performance
-          distributions. Designed reporting logic to identify knowledge gaps
-          and support targeted learning recommendations.
-        </p>
-        <div class="tags">
-          <span class="tag">Python</span>
-          <span class="tag">Education</span>
-          <span class="tag">Adaptive Assessment</span>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="reveal">
-      <div class="section-heading">
-        <span class="icon" data-icon="cpu"></span>
-        <h2>Skills</h2>
-      </div>
-
-      <div class="card">
-        <h3><span class="icon" data-icon="trending"></span>Data Analysis &amp; Business Insights</h3>
+        <h3>Data Analysis &amp; Business Insights</h3>
         <div class="tags">
           <span class="tag">Performance Analysis</span>
           <span class="tag">KPI Definition</span>
@@ -166,7 +132,7 @@
       </div>
 
       <div class="card">
-        <h3><span class="icon" data-icon="code"></span>Programming &amp; Data</h3>
+        <h3>Programming &amp; Data</h3>
         <div class="tags">
           <span class="tag">SQL</span>
           <span class="tag">Python</span>
@@ -175,7 +141,7 @@
       </div>
 
       <div class="card">
-        <h3><span class="icon" data-icon="cpu"></span>Machine Learning &amp; Statistics</h3>
+        <h3>Machine Learning &amp; Statistics</h3>
         <div class="tags">
           <span class="tag">Machine Learning</span>
           <span class="tag">Statistical Modeling</span>
@@ -192,7 +158,7 @@
       </div>
 
       <div class="card">
-        <h3><span class="icon" data-icon="barchart"></span>Data Visualization &amp; BI</h3>
+        <h3>Data Visualization &amp; BI</h3>
         <div class="tags">
           <span class="tag">Power BI</span>
           <span class="tag">Matplotlib</span>
@@ -209,7 +175,7 @@
       </div>
 
       <div class="card">
-        <h3><span class="icon" data-icon="users"></span>Analytics, Collaboration &amp; Communication</h3>
+        <h3>Analytics, Collaboration &amp; Communication</h3>
         <div class="tags">
           <span class="tag">Analytical Thinking</span>
           <span class="tag">Data Interpretation</span>
@@ -221,11 +187,8 @@
       </div>
     </section>
 
-    <section id="education" class="reveal">
-      <div class="section-heading">
-        <span class="icon" data-icon="book"></span>
-        <h2>Education</h2>
-      </div>
+    <section id="education">
+      <h2 class="section-title">Education</h2>
 
       <div class="timeline-item">
         <h3>B.Sc. in Electronics and Computer Engineering</h3>
@@ -238,40 +201,22 @@
       </div>
     </section>
 
-    <section id="languages" class="reveal">
-      <div class="section-heading">
-        <span class="icon" data-icon="globe"></span>
-        <h2>Languages</h2>
-      </div>
+    <section id="languages">
+      <h2 class="section-title">Languages</h2>
       <div class="tags">
         <span class="tag">Portuguese (Native)</span>
         <span class="tag">English (Fluent)</span>
       </div>
     </section>
 
-    <section id="contact" class="reveal">
-      <div class="section-heading">
-        <span class="icon" data-icon="mail"></span>
-        <h2>Contact</h2>
-      </div>
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
       <p class="tagline">Based in Rio de Janeiro, Brazil.</p>
       <ul class="contact-list">
-        <li>
-          <span class="icon" data-icon="mail"></span>
-          <a href="mailto:ggregon@gmail.com">ggregon@gmail.com</a>
-        </li>
-        <li>
-          <span class="icon" data-icon="phone"></span>
-          <a href="tel:+552198165833">+55 21 98165-8333</a>
-        </li>
-        <li>
-          <span class="icon" data-icon="github"></span>
-          <a href="https://github.com/GGregon" target="_blank" rel="noopener">github.com/GGregon</a>
-        </li>
-        <li>
-          <span class="icon" data-icon="linkedin"></span>
-          <a href="https://linkedin.com/in/gabriel-gregon" target="_blank" rel="noopener">linkedin.com/in/gabriel-gregon</a>
-        </li>
+        <li><a href="mailto:ggregon@gmail.com">ggregon@gmail.com</a></li>
+        <li><a href="tel:+552198165833">+55 21 98165-8333</a></li>
+        <li><a href="https://github.com/GGregon" target="_blank" rel="noopener">github.com/GGregon</a></li>
+        <li><a href="https://linkedin.com/in/gabriel-gregon" target="_blank" rel="noopener">linkedin.com/in/gabriel-gregon</a></li>
       </ul>
     </section>
   </main>
