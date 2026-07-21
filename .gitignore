@@ -2,3 +2,13 @@
 Thumbs.db
 *.log
 .vscode/
+.next/
+out/
+node_modules/
+coverage/
+*.aux
+*.fdb_latexmk
+*.fls
+*.out
+*.synctex.gz
+*.tsbuildinfo
