@@ -30,6 +30,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .siteHeader { border-bottom: 1px solid var(--rule); }
 .headerInner { min-height: 74px; display: flex; align-items: center; justify-content: center; }
 .headerRight { display: flex; align-items: center; gap: 2rem; }
+.primaryNav { display: flex; align-items: center; gap: 1.25rem; }
 .primaryNav a { color: var(--secondary); font-size: .88rem; text-decoration: none; }
 .primaryNav a:hover { color: var(--accent); }
 .iconNav { display: flex; align-items: center; gap: .55rem; }
@@ -45,7 +46,8 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .placeholderCopy .mono { display: block; color: var(--accent); margin-bottom: .6rem; }
 .introMeta { grid-column: 7 / 12; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding-top: 1rem; margin-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .8rem; }
 
-.homeSection { display: grid; grid-template-columns: 3fr 9fr; gap: 24px; padding-block: clamp(4rem, 9vw, 7rem); border-top: 1px solid var(--ink); }
+.homeSectionsGrid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr); gap: clamp(2.5rem, 6vw, 6rem); }
+.homeSection { padding-block: clamp(4rem, 9vw, 7rem); border-top: 1px solid var(--ink); }
 .sectionContent { max-width: var(--reading); }
 .sectionContent h2 { margin: -.15rem 0 1.5rem; font-family: var(--serif); font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: 1; font-weight: 400; letter-spacing: -.04em; }
 .sectionContent > p { color: var(--secondary); font-size: 1.08rem; }
@@ -124,8 +126,8 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
   .intro h1 { font-size: clamp(3.8rem, 18vw, 6.5rem); }
   .introText { margin-top: 2rem; }
   .introMeta { margin-top: 2rem; }
-  .homeSection { grid-template-columns: 1fr; }
-  .sectionLabel { margin-bottom: 1.5rem; }
+  .headerRight { flex-wrap: wrap; justify-content: center; gap: .35rem 1rem; padding-block: .55rem; }
+  .homeSectionsGrid { grid-template-columns: 1fr; gap: 0; }
   .emptyState { flex-direction: column; gap: .5rem; }
   .articleCard, .articleCardCompact { grid-template-columns: 1fr; }
   .articleCardImage, .articleCardCompact .articleCardImage { min-height: 220px; }

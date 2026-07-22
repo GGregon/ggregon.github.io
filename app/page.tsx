@@ -16,24 +16,24 @@ export default function HomePage() {
         <div className="introMeta"><span>Rio de Janeiro, Brazil</span><span>Head of Data at EdukDados</span></div>
       </section>
 
-      <section className="shell homeSection" aria-labelledby="writing-title">
-        <div className="sectionLabel"><span className="mono">01 / POSTS &amp; ARTICLES</span></div>
-        <div className="sectionContent">
-          <h2 id="writing-title">Posts &amp; articles</h2>
-          <p>Essays, technical notes, and practical observations about work, learning, data, and the processes behind what we make.</p>
-          {featuredPost && <ArticleCard post={featuredPost} compact />}
-          <Link className="textLink" href="/writing/">Visit all posts &amp; articles →</Link>
-        </div>
-      </section>
+      <div className="shell homeSectionsGrid">
+        <section className="homeSection" aria-labelledby="writing-title">
+          <div className="sectionContent">
+            <h2 id="writing-title">Posts &amp; articles</h2>
+            <p>Essays, technical notes, and practical observations about work, learning, data, and the processes behind what we make.</p>
+            {featuredPost && <ArticleCard post={featuredPost} compact />}
+            <Link className="textLink" href="/writing/">Visit all posts &amp; articles →</Link>
+          </div>
+        </section>
 
-      <section className="shell homeSection quietSection" aria-labelledby="projects-title">
-        <div className="sectionLabel"><span className="mono">02 / PROJECTS</span></div>
-        <div className="sectionContent">
-          <h2 id="projects-title">Selected work, eventually.</h2>
-          <p>Project notes and case studies will appear here when they are ready to be shared properly.</p>
-          <span className="statusLine"><span aria-hidden="true" /> Coming soon</span>
-        </div>
-      </section>
+        <section className="homeSection quietSection" id="projects" aria-labelledby="projects-title">
+          <div className="sectionContent">
+            <h2 id="projects-title">Selected work, eventually.</h2>
+            <p>Project notes and case studies will appear here when they are ready to be shared properly.</p>
+            <span className="statusLine"><span aria-hidden="true" /> Coming soon</span>
+          </div>
+        </section>
+      </div>
     </>
   );
 }

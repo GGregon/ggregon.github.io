@@ -42,7 +42,7 @@ function Icon({ name }: { name: IconName }) {
 }
 
 function Header() {
-  return <header className="siteHeader"><div className="shell headerInner"><div className="headerRight"><nav className="primaryNav" aria-label="Primary navigation"><Link href="/writing/">Posts &amp; Articles</Link></nav><nav className="iconNav" aria-label="Contact and profile links"><a href="mailto:ggregon@gmail.com" aria-label="Email" title="Email"><Icon name="email" /></a><a href={siteConfig.github} aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer"><Icon name="github" /></a><a href={siteConfig.linkedin} aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><Icon name="linkedin" /></a><Link href="/resume/" aria-label="Résumé" title="Résumé"><Icon name="resume" /></Link></nav></div></div></header>;
+  return <header className="siteHeader"><div className="shell headerInner"><div className="headerRight"><nav className="primaryNav" aria-label="Primary navigation"><Link href="/writing/">Posts &amp; Articles</Link><Link href="/#projects">Projects</Link></nav><nav className="iconNav" aria-label="Contact and profile links"><a href="mailto:ggregon@gmail.com" aria-label="Email" title="Email"><Icon name="email" /></a><a href={siteConfig.github} aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer"><Icon name="github" /></a><a href={siteConfig.linkedin} aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><Icon name="linkedin" /></a><Link href="/resume/" aria-label="Résumé" title="Résumé"><Icon name="resume" /></Link></nav></div></div></header>;
 }
 
 function Footer() {
