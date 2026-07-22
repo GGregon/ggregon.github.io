@@ -11,7 +11,6 @@ export default function HomePage() {
       <section className="shell intro" aria-labelledby="intro-title">
         <h1 id="intro-title">Hello, I’m Gabriel.</h1>
         <div className="introText">
-          <p>I’m a data professional who enjoys building thoughtful systems and making complex technical work easier to understand.</p>
           <p>I’m passionate about data, math, products, building things, thinking deeply, writing, and explaining complex ideas in simple terms (even though I struggle with most of them, haha).</p>
         </div>
         <div className="introMeta"><span>Rio de Janeiro, Brazil</span><span>Head of Data at EdukDados</span></div>
