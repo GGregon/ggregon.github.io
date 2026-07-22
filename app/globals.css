@@ -37,19 +37,24 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .iconNav a { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; color: var(--secondary); text-decoration: none; transition: color .16s ease, background-color .16s ease; }
 .iconNav a:hover { color: var(--accent); background: var(--accent-soft); }
 .iconNav svg { width: 19px; height: 19px; }
+.introProfileLinks { margin-top: 1.15rem; }
 
-.intro { padding-block: clamp(4.5rem, 8vw, 7rem); display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; align-items: start; }
-.intro h1 { grid-column: 1 / 7; margin: 0; font-family: var(--serif); font-size: clamp(4rem, 8vw, 7rem); line-height: .95; font-weight: 400; letter-spacing: -.055em; }
-.introText { grid-column: 7 / 12; margin-top: 2rem; font-size: clamp(1.1rem, 2vw, 1.35rem); }
+.homeLayout { display: grid; grid-template-columns: minmax(300px, 2fr) minmax(0, 3fr); grid-template-areas: "intro posts" "projects posts"; column-gap: clamp(3rem, 8vw, 8rem); align-items: start; padding-block: clamp(3.5rem, 7vw, 6rem) clamp(5rem, 10vw, 8rem); }
+.intro { grid-area: intro; }
+.intro h1 { margin: 0; font-family: var(--serif); font-size: clamp(4rem, 6vw, 5.75rem); line-height: .95; font-weight: 400; letter-spacing: -.055em; }
+.introText { margin-top: 1.75rem; font-size: clamp(1rem, 1.5vw, 1.15rem); }
 .introText > p:first-child { margin-top: 0; color: var(--ink); }
 .placeholderCopy { font-size: .96rem; color: var(--secondary); }
 .placeholderCopy .mono { display: block; color: var(--accent); margin-bottom: .6rem; }
-.introMeta { grid-column: 7 / 12; display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding-top: 1rem; margin-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .8rem; }
+.introMeta { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; padding-top: 1rem; margin-top: 2.5rem; border-top: 1px solid var(--rule); color: var(--muted); font-size: .72rem; }
 
-.homeSectionsGrid { display: grid; grid-template-columns: minmax(0, 3fr) minmax(280px, 2fr); gap: clamp(2.5rem, 6vw, 6rem); }
-.homeSection { padding-block: clamp(4rem, 9vw, 7rem); border-top: 1px solid var(--ink); }
+.homeSection { border: 0; }
+.postsSection { grid-area: posts; }
+.projectsSection { grid-area: projects; margin-top: clamp(3rem, 6vw, 5rem); }
 .sectionContent { max-width: var(--reading); }
-.sectionContent h2 { margin: -.15rem 0 1.5rem; font-family: var(--serif); font-size: clamp(2.5rem, 5vw, 4.25rem); line-height: 1; font-weight: 400; letter-spacing: -.04em; }
+.sectionContent h2 { margin: -.15rem 0 1.25rem; font-family: var(--serif); font-size: clamp(2.4rem, 4vw, 3.5rem); line-height: 1; font-weight: 400; letter-spacing: -.04em; }
+.sectionTitleLink { text-decoration: none; }
+.sectionTitleLink:hover { color: var(--accent); }
 .sectionContent > p { color: var(--secondary); font-size: 1.08rem; }
 .emptyState { margin: 3rem 0 1.5rem; padding: 1.5rem 0; border-block: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 2rem; }
 .emptyState p { margin: 0; color: var(--muted); }
@@ -67,7 +72,6 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .articleCardCompact .articleCardImage { min-height: 210px; }
 .articleCardCompact .articleCardBody { padding: 1.5rem; }
 .articleCardCompact .articleCardBody strong { font-size: clamp(1.8rem, 3vw, 2.5rem); }
-.quietSection { border-color: var(--rule); padding-bottom: clamp(6rem, 12vw, 10rem); }
 .statusLine { display: inline-flex; align-items: center; gap: .55rem; margin-top: 1.5rem; font-family: var(--mono); font-size: .7rem; text-transform: uppercase; color: var(--muted); }
 .statusLine > span { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
 
@@ -82,12 +86,11 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 
 .articlePage { width: min(calc(100% - 48px), var(--reading)); margin-inline: auto; padding-block: clamp(4rem, 10vw, 8rem); }
 .articleHeader { margin-bottom: clamp(3rem, 7vw, 5rem); }
-.articleHeader h1 { margin: 1.25rem 0 1.5rem; font-family: var(--serif); font-size: clamp(3.8rem, 9vw, 7rem); line-height: .94; font-weight: 400; letter-spacing: -.055em; }
+.articleHeader h1 { margin: 0 0 1.5rem; font-family: var(--serif); font-size: clamp(3.8rem, 9vw, 7rem); line-height: .94; font-weight: 400; letter-spacing: -.055em; }
 .articleDek { max-width: 580px; color: var(--secondary); font-size: 1.15rem; }
 .articleMeta { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); }
-.articleHero { position: relative; aspect-ratio: 3 / 2; margin: 0 0 clamp(3rem, 7vw, 5rem); overflow: hidden; background: var(--soft); }
-.articleHero img { object-fit: cover; }
-.articleBody { font-family: var(--serif); font-size: clamp(1.15rem, 2.2vw, 1.3rem); line-height: 1.75; }
+.articleBody { font-family: var(--serif); font-size: 1.1rem; line-height: 1.75; }
+/* .articleBody { font-family: var(--serif); font-size: clamp(1.05rem, 1.8vw, 1.18rem); line-height: 1.75; } */
 .articleBody p { margin: 0 0 1.55em; }
 .articleBody p:first-child::first-letter { float: left; margin: .08em .12em 0 0; color: var(--accent); font-size: 4.2em; line-height: .75; }
 .articleBody h2, .articleBody h3 { margin: 2.2em 0 .75em; line-height: 1.15; font-weight: 400; letter-spacing: -.025em; }
@@ -121,13 +124,12 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
   .headerRight { gap: .75rem; }
   .iconNav { gap: .2rem; }
   .iconNav a { width: 36px; height: 36px; }
-  .intro { grid-template-columns: 1fr; padding-block: 4.5rem; }
-  .intro h1, .introText, .introMeta { grid-column: 1; }
+  .homeLayout { grid-template-columns: 1fr; grid-template-areas: "intro" "posts" "projects"; row-gap: 4rem; padding-block: 4rem 6rem; }
   .intro h1 { font-size: clamp(3.8rem, 18vw, 6.5rem); }
   .introText { margin-top: 2rem; }
   .introMeta { margin-top: 2rem; }
   .headerRight { flex-wrap: wrap; justify-content: center; gap: .35rem 1rem; padding-block: .55rem; }
-  .homeSectionsGrid { grid-template-columns: 1fr; gap: 0; }
+  .projectsSection { margin-top: 0; }
   .emptyState { flex-direction: column; gap: .5rem; }
   .articleCard, .articleCardCompact { grid-template-columns: 1fr; }
   .articleCardImage, .articleCardCompact .articleCardImage { min-height: 220px; }

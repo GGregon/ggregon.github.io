@@ -2,7 +2,6 @@
 title: "Post title"
 date: "YYYY-MM-DD"
 description: "A short description for cards and search results."
-category: "Category"
 author: "Gabriel Gregon"
 language: "pt-BR"
 cover: "cover.jpg"

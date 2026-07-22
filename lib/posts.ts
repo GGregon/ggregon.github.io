@@ -8,7 +8,6 @@ export type Post = {
   title: string;
   date: string;
   description: string;
-  category: string;
   author: string;
   language: string;
   cover: string;
@@ -40,7 +39,7 @@ function readPost(slug: string): Post | null {
   const parsed = parseFrontmatter(fs.readFileSync(filePath, "utf8"));
   if (!parsed || parsed.data.published !== "true") return null;
 
-  const required = ["title", "date", "description", "category", "author", "language", "cover", "coverAlt"];
+  const required = ["title", "date", "description", "author", "language", "cover", "coverAlt"];
   for (const field of required) {
     if (!parsed.data[field]) throw new Error(`Post "${slug}" is missing frontmatter field "${field}".`);
   }
@@ -53,7 +52,6 @@ function readPost(slug: string): Post | null {
     title: parsed.data.title,
     date: parsed.data.date,
     description: parsed.data.description,
-    category: parsed.data.category,
     author: parsed.data.author,
     language: parsed.data.language,
     cover: parsed.data.cover,

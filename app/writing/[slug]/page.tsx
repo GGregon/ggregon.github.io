@@ -43,15 +43,10 @@ export default async function PostPage({ params }: PageProps) {
   return (
     <article className="articlePage" lang={post.language}>
       <header className="articleHeader">
-        <p className="eyebrow">Ensaio / {post.category}</p>
         <h1>{post.title}</h1>
         <p className="articleDek">{post.description}</p>
         <p className="articleMeta mono"><time dateTime={post.date}>{formatPostDate(post.date)}</time> · {post.author}</p>
       </header>
-
-      <figure className="articleHero">
-        <Image src={postAssetPath(post, post.cover)} alt={post.coverAlt} fill sizes="(max-width: 760px) 100vw, 700px" priority />
-      </figure>
 
       <div className="articleBody">
         <ReactMarkdown components={{
@@ -68,7 +63,7 @@ export default async function PostPage({ params }: PageProps) {
         }}>{post.content}</ReactMarkdown>
       </div>
 
-      <Link className="articleBack" href="/writing/">← Back to posts &amp; articles</Link>
+      <Link className="articleBack" href="/writing/">← Back to the Brain Dump</Link>
     </article>
   );
 }

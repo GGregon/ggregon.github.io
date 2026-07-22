@@ -3,7 +3,7 @@ import { ArticleCard } from "@/components/article-card";
 import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
-  title: "Posts & Articles",
+  title: "Brain Dump",
   description: "Notes on data architecture, analytics, machine learning, and educational technology.",
   alternates: { canonical: "/writing/" },
 };
@@ -14,7 +14,7 @@ export default function WritingPage() {
   return (
     <section className="shell archivePage">
       <header className="archiveHeader">
-        <p className="eyebrow">Posts &amp; articles</p>
+        <p className="eyebrow">Brain Dump</p>
         <h1>A public notebook,<br />slowly taking shape.</h1>
         <p>Short notes and longer articles about building data systems, working with analytical products, and learning from technical decisions.</p>
       </header>
