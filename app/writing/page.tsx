@@ -1,4 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
+import farofaImage from "../../blog/posts/farofa_img.png";
 
 export const metadata: Metadata = {
   title: "Writing",
@@ -14,10 +17,16 @@ export default function WritingPage() {
         <h1>A public notebook,<br />slowly taking shape.</h1>
         <p>Short notes and longer articles about building data systems, working with analytical products, and learning from technical decisions.</p>
       </header>
-      <div className="archiveEmpty">
-        <span className="mono">NO PUBLISHED ENTRIES YET</span>
-        <h2>The first article is coming soon.</h2>
-        <p>I’d rather publish a small number of useful pieces than fill the archive with placeholder content.</p>
+      <div className="archiveList" aria-label="Published articles">
+        <Link className="articleCard" href="/writing/a-farofa-de-alho/">
+          <span className="articleCardImage"><Image src={farofaImage} alt="Ilustração em lápis de cor de um prato de farofa de alho" /></span>
+          <span className="articleCardBody">
+            <span className="mono">ESSAY · 22 JUL 2026</span>
+            <strong>A farofa de alho</strong>
+            <span>Sobre tempo, processo e o que realmente faz diferença no resultado.</span>
+            <span className="articleCardLink">Read article →</span>
+          </span>
+        </Link>
       </div>
     </section>
   );

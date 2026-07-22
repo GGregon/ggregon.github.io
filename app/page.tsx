@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Image from "next/image";
+import farofaImage from "../blog/posts/farofa_img.png";
 
 export default function HomePage() {
   return (
@@ -17,8 +19,15 @@ export default function HomePage() {
         <div className="sectionLabel"><span className="mono">01 / WRITING</span></div>
         <div className="sectionContent">
           <h2 id="writing-title">Notes and articles</h2>
-          <p>This will be the main part of the site: a place for essays, technical notes, and practical observations about data architecture, analytical products, machine learning, and education.</p>
-          <div className="emptyState"><span className="mono">ARCHIVE / COMING SOON</span><p>The first notes are still being prepared.</p></div>
+          <p>Essays, technical notes, and practical observations about work, learning, data, and the processes behind what we make.</p>
+          <Link className="articleCard articleCardCompact" href="/writing/a-farofa-de-alho/">
+            <span className="articleCardImage"><Image src={farofaImage} alt="Ilustração em lápis de cor de um prato de farofa de alho" /></span>
+            <span className="articleCardBody">
+              <span className="mono">ESSAY · 22 JUL 2026</span>
+              <strong>A farofa de alho</strong>
+              <span>Sobre tempo, processo e o que realmente faz diferença no resultado.</span>
+            </span>
+          </Link>
           <Link className="textLink" href="/writing/">Visit the writing archive →</Link>
         </div>
       </section>

@@ -55,6 +55,19 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .emptyState { margin: 3rem 0 1.5rem; padding: 1.5rem 0; border-block: 1px solid var(--rule); display: flex; justify-content: space-between; gap: 2rem; }
 .emptyState p { margin: 0; color: var(--muted); }
 .textLink { color: var(--accent); font-weight: 600; text-decoration: none; }
+.articleCard { display: grid; grid-template-columns: minmax(220px, 5fr) 7fr; color: inherit; border-block: 1px solid var(--rule); text-decoration: none; }
+.articleCardImage { min-height: 280px; display: grid; place-items: center; overflow: hidden; background: linear-gradient(145deg, var(--accent-soft), var(--soft)); color: var(--accent); }
+.articleCardImage img { width: 100%; height: 100%; object-fit: cover; }
+.articleCardBody { padding: clamp(1.5rem, 4vw, 3rem); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+.articleCardBody .mono { color: var(--accent); }
+.articleCardBody strong { margin: .8rem 0; font-family: var(--serif); font-size: clamp(2rem, 4vw, 3.4rem); line-height: 1; font-weight: 400; letter-spacing: -.035em; }
+.articleCardBody > span:not(.mono, .articleCardLink) { color: var(--secondary); }
+.articleCardLink { margin-top: 1.5rem; color: var(--accent); font-weight: 600; }
+.articleCard:hover .articleCardLink { text-decoration: underline; text-underline-offset: .22em; }
+.articleCardCompact { margin: 2.5rem 0 1.5rem; grid-template-columns: 2fr 3fr; }
+.articleCardCompact .articleCardImage { min-height: 210px; }
+.articleCardCompact .articleCardBody { padding: 1.5rem; }
+.articleCardCompact .articleCardBody strong { font-size: clamp(1.8rem, 3vw, 2.5rem); }
 .quietSection { border-color: var(--rule); padding-bottom: clamp(6rem, 12vw, 10rem); }
 .statusLine { display: inline-flex; align-items: center; gap: .55rem; margin-top: 1.5rem; font-family: var(--mono); font-size: .7rem; text-transform: uppercase; color: var(--muted); }
 .statusLine > span { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
@@ -66,6 +79,19 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .archiveEmpty { max-width: 700px; margin: 6rem 0 0 auto; padding-block: 2rem; border-block: 1px solid var(--rule); }
 .archiveEmpty h2 { margin: 1.25rem 0 .5rem; font-family: var(--serif); font-size: 2rem; font-weight: 400; }
 .archiveEmpty p { color: var(--secondary); }
+.archiveList { margin-top: clamp(4rem, 9vw, 7rem); }
+
+.articlePage { width: min(calc(100% - 48px), var(--reading)); margin-inline: auto; padding-block: clamp(4rem, 10vw, 8rem); }
+.articleHeader { margin-bottom: clamp(3rem, 7vw, 5rem); }
+.articleHeader h1 { margin: 1.25rem 0 1.5rem; font-family: var(--serif); font-size: clamp(3.8rem, 9vw, 7rem); line-height: .94; font-weight: 400; letter-spacing: -.055em; }
+.articleDek { max-width: 580px; color: var(--secondary); font-size: 1.15rem; }
+.articleMeta { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); }
+.articleHero { margin: 0 0 clamp(3rem, 7vw, 5rem); overflow: hidden; background: var(--soft); }
+.articleHero img { width: 100%; height: auto; display: block; }
+.articleBody { font-family: var(--serif); font-size: clamp(1.15rem, 2.2vw, 1.3rem); line-height: 1.75; }
+.articleBody p { margin: 0 0 1.55em; }
+.articleBody p:first-child::first-letter { float: left; margin: .08em .12em 0 0; color: var(--accent); font-size: 4.2em; line-height: .75; }
+.articleBack { display: inline-block; margin-top: 3rem; color: var(--accent); font-family: var(--sans); font-size: .9rem; font-weight: 600; text-decoration: none; }
 
 .resumeList { margin: 5rem 0 0; border-top: 1px solid var(--ink); }
 .resumeList article { display: grid; grid-template-columns: 2fr 7fr; gap: 24px; padding: 2rem 0; border-bottom: 1px solid var(--rule); }
@@ -97,6 +123,9 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
   .homeSection { grid-template-columns: 1fr; }
   .sectionLabel { margin-bottom: 1.5rem; }
   .emptyState { flex-direction: column; gap: .5rem; }
+  .articleCard, .articleCardCompact { grid-template-columns: 1fr; }
+  .articleCardImage, .articleCardCompact .articleCardImage { min-height: 220px; }
+  .articlePage { width: min(calc(100% - 36px), var(--reading)); }
   .resumeList article { grid-template-columns: 1fr; }
 }
 
