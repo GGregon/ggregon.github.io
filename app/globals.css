@@ -28,9 +28,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .skipLink:focus { transform: none; }
 
 .siteHeader { border-bottom: 1px solid var(--rule); }
-.headerInner { min-height: 74px; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
-.wordmark { font-weight: 650; letter-spacing: -.02em; text-decoration: none; white-space: nowrap; }
-.wordmark span { font-family: var(--serif); font-style: italic; font-weight: 400; }
+.headerInner { min-height: 74px; display: flex; align-items: center; justify-content: center; }
 .headerRight { display: flex; align-items: center; gap: 2rem; }
 .primaryNav a { color: var(--secondary); font-size: .88rem; text-decoration: none; }
 .primaryNav a:hover { color: var(--accent); }
@@ -40,8 +38,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .iconNav svg { width: 19px; height: 19px; }
 
 .intro { padding-block: clamp(4.5rem, 8vw, 7rem); display: grid; grid-template-columns: repeat(12, 1fr); gap: 24px; align-items: start; }
-.intro > .eyebrow { grid-column: 1 / 13; }
-.intro h1 { grid-column: 1 / 7; margin: 1.6rem 0 0; font-family: var(--serif); font-size: clamp(4rem, 8vw, 7rem); line-height: .95; font-weight: 400; letter-spacing: -.055em; }
+.intro h1 { grid-column: 1 / 7; margin: 0; font-family: var(--serif); font-size: clamp(4rem, 8vw, 7rem); line-height: .95; font-weight: 400; letter-spacing: -.055em; }
 .introText { grid-column: 7 / 12; margin-top: 2rem; font-size: clamp(1.1rem, 2vw, 1.35rem); }
 .introText > p:first-child { margin-top: 0; color: var(--ink); }
 .placeholderCopy { font-size: .96rem; color: var(--secondary); }
@@ -120,11 +117,10 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
   .shell { width: min(calc(100% - 36px), var(--content)); }
   .headerInner { min-height: 68px; }
   .headerRight { gap: .75rem; }
-  .primaryNav { display: none; }
   .iconNav { gap: .2rem; }
   .iconNav a { width: 36px; height: 36px; }
   .intro { grid-template-columns: 1fr; padding-block: 4.5rem; }
-  .intro > .eyebrow, .intro h1, .introText, .introMeta { grid-column: 1; }
+  .intro h1, .introText, .introMeta { grid-column: 1; }
   .intro h1 { font-size: clamp(3.8rem, 18vw, 6.5rem); }
   .introText { margin-top: 2rem; }
   .introMeta { margin-top: 2rem; }
@@ -138,8 +134,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 }
 
 @media (max-width: 430px) {
-  .wordmark { font-size: .9rem; }
-  .headerRight { margin-right: -.4rem; }
+  .headerRight { margin-inline: auto; }
   .iconNav svg { width: 18px; height: 18px; }
   .siteFooter .shell { align-items: flex-start; flex-direction: column; justify-content: center; }
 }

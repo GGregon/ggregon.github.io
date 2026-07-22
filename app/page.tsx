@@ -9,22 +9,21 @@ export default function HomePage() {
   return (
     <>
       <section className="shell intro" aria-labelledby="intro-title">
-        <p className="eyebrow">Data systems · Analytics · Educational technology</p>
         <h1 id="intro-title">Hello, I’m Gabriel.</h1>
         <div className="introText">
           <p>I’m a data professional who enjoys building thoughtful systems and making complex technical work easier to understand.</p>
-          <p className="placeholderCopy"><span className="mono">ABOUT TEXT / PLACEHOLDER</span> I work across data engineering, analytics, architecture, and educational technology. This is a temporary introduction—a more personal version can replace it once we shape the story together.</p>
+          <p>I’m passionate about data, math, products, building things, thinking deeply, writing, and explaining complex ideas in simple terms (even though I struggle with most of them, haha).</p>
         </div>
         <div className="introMeta"><span>Rio de Janeiro, Brazil</span><span>Head of Data at EdukDados</span></div>
       </section>
 
       <section className="shell homeSection" aria-labelledby="writing-title">
-        <div className="sectionLabel"><span className="mono">01 / WRITING</span></div>
+        <div className="sectionLabel"><span className="mono">01 / POSTS &amp; ARTICLES</span></div>
         <div className="sectionContent">
-          <h2 id="writing-title">Notes and articles</h2>
+          <h2 id="writing-title">Posts &amp; articles</h2>
           <p>Essays, technical notes, and practical observations about work, learning, data, and the processes behind what we make.</p>
           {featuredPost && <ArticleCard post={featuredPost} compact />}
-          <Link className="textLink" href="/writing/">Visit the writing archive →</Link>
+          <Link className="textLink" href="/writing/">Visit all posts &amp; articles →</Link>
         </div>
       </section>
 

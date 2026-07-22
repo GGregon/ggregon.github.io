@@ -68,7 +68,7 @@ export default async function PostPage({ params }: PageProps) {
         }}>{post.content}</ReactMarkdown>
       </div>
 
-      <Link className="articleBack" href="/writing/">← Back to writing</Link>
+      <Link className="articleBack" href="/writing/">← Back to posts &amp; articles</Link>
     </article>
   );
 }
