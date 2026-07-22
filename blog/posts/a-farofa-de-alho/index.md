@@ -1,7 +1,7 @@
 ---
 title: "A farofa de alho"
 date: "2026-07-22"
-description: "Sobre tempo, processo e o que realmente faz diferença no resultado."
+description: "Um ensaio sobre tempo, processo e o que realmente faz diferença no resultado."
 category: "Cozinha & trabalho"
 author: "Gabriel Gregon"
 language: "pt-BR"
@@ -30,6 +30,9 @@ Acontece que minha sogra gosta de descascar o alho da forma mais difícil possí
 Ela não esmaga o alho, não o aquece e não utiliza nenhum recurso que possa economizar tempo. Vai alho por alho, um a um, retirando cada camada infinitesimalmente fina de pele, como se estivesse lapidando-o.
 
 Em seguida, usando uma faca que nem sequer foi feita propriamente para corte, transforma o alho em lascas muito finas. Depois, coloca essas lâminas em uma frigideira com uma quantidade exorbitante de manteiga, acrescenta a farinha de mandioca, mexe por alguns segundos e pronto. Corrige o sal e está feita a farofa de alho da minha sogra, que, repito, é muito gostosa.
+
+![Dentes de alho cortados em lascas finas](./images/lento_vs_rapido.png)
+
 
 Repito: não há problema algum com a farofa dela.
 

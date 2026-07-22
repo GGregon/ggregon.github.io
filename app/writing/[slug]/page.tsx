@@ -55,14 +55,13 @@ export default async function PostPage({ params }: PageProps) {
 
       <div className="articleBody">
         <ReactMarkdown components={{
-          img: ({ src = "", alt = "", title }) => {
+          img: ({ src = "", alt = "" }) => {
             const imageSource = typeof src === "string" && src.startsWith("http")
               ? src
               : postAssetPath(post, typeof src === "string" ? src : "");
             return (
               <span className="articleInlineImage">
-                <Image src={imageSource} alt={alt} fill sizes="(max-width: 760px) 100vw, 700px" />
-                {title && <span className="articleImageCaption">{title}</span>}
+                <Image src={imageSource} alt={alt} width={1600} height={1200} sizes="(max-width: 760px) 100vw, 860px" />
               </span>
             );
           },

@@ -97,9 +97,8 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .articleBody ul, .articleBody ol { margin: 0 0 1.55em; padding-left: 1.4em; }
 .articleBody blockquote { margin: 2em 0; padding-left: 1.25em; border-left: 3px solid var(--accent); color: var(--secondary); font-style: italic; }
 .articleBody a { color: var(--accent); }
-.articleInlineImage { position: relative; aspect-ratio: 3 / 2; width: min(100vw - 36px, 860px); margin: 2.5em 50%; display: block; overflow: hidden; transform: translateX(-50%); background: var(--soft); }
-.articleInlineImage img { object-fit: contain; }
-.articleImageCaption { position: absolute; right: 0; bottom: 0; left: 0; padding: .65rem .85rem; background: color-mix(in srgb, var(--ink) 82%, transparent); color: white; font-family: var(--sans); font-size: .75rem; line-height: 1.4; }
+.articleInlineImage { width: 100%; margin: 2.5em 0; display: block; }
+.articleInlineImage img { width: 100%; height: auto; display: block; }
 .articleBack { display: inline-block; margin-top: 3rem; color: var(--accent); font-family: var(--sans); font-size: .9rem; font-weight: 600; text-decoration: none; }
 
 .resumeList { margin: 5rem 0 0; border-top: 1px solid var(--ink); }
