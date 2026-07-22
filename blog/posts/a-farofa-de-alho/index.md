@@ -20,7 +20,9 @@ E não me entenda mal: isso não significa que, ao longo desses quase 20 anos, e
 
 De acordo com as pessoas mais próximas de mim, especialmente aquelas que já comeram da minha comida mais de uma vez, eu cozinho muito bem (dito por elas!!!. Não usaria um espaço privado como este para me auto-bajular, rs.)
 
-Feita essa breve digressão sobre minha relação com a gastronomia, apresento-lhes a farofa da minha sogra.
+Feita essa breve digressão sobre minha relação com a gastronomia, apresento-lhes
+
+## A farofa da minha sogra
 
 ![Sogra segurando prato](./images/sogra_segurando_prato_farofa.png)
 
@@ -34,6 +36,8 @@ Em seguida, usando uma faca que nem sequer foi feita propriamente para corte, tr
 
 Corrige o sal e está feita a farofa de alho da minha sogra, que, repito, é muito gostosa.
 
+## Uma hipótese
+
 Certa vez, quando a questionei sobre por que gastava tanto tempo nesse processo, ela disse que o sabor ficava diferente.
 
 Imediatamente, lembrei-me de todos os anos em que cozinhei e tive muita confiança de que aquela não poderia ser a resposta. Estava convícto que, dado o contexto onde a farofa era um acompanhamento, seria impossivel notar diferença caso o alho fosse preparado de outra forma.
@@ -43,6 +47,8 @@ Burro que fui, continuei questionando.
 Mas, a partir daquele momento, eu já não falava mais apenas com a minha sogra. Falava com uma pessoa que havia sido questionada sobre algo em que provavelmente nunca tinha parado para pensar e que, diante disso, colocou um escudo à sua frente.
 
 Tudo o que eu dissesse dali em diante seria rebatido com respostas que já não tinham muita relação com a pergunta inicial.
+
+## O teste
 
 Alguns meses depois, pude confirmar minha hipótese.. Minha namorada pediu que eu preparasse o almoço, e ficou sob minha responsabilidade fazer também a farofa.
 
@@ -54,7 +60,7 @@ E voilà: estava pronta a farofa de alho.
 
 Ainda durante o almoço, sem que eu falasse nada, todos elogiaram:
 
-— Nossa, a farofa ficou muito boa.
+> — Nossa, a farofa ficou muito boa.
 
 Foi nesse momento que comecei a refletir.
 
@@ -68,17 +74,17 @@ E eu me questionava: por que ela continua investindo tanto tempo nisso, mesmo de
 
 Foi então que comecei uma reflexão interna... Será que isso nunca aconteceu comigo? Ou com você, apenas se manifestando de maneiras diferentes?
 
+## O que eu demorei a entender...
+
 Acontece que, enquanto minha sogra descascava o alho, ela aproveitava para conversar, fofocar sobre alguma coisa, perguntar às filhas como estava a vida, ouvir o culto, reclamar e, eventualmente, exercitar sua coordenação motora.
 
 Aquele momento não era apenas sobre preparar o almoço.
 
-Eu demorei um pouco para entender isso.
+Na minha cabeça, **como eu já havia testado e sabia que aquilo poderia ser feito mais rápido**, faltou sensibilidade para perceber o que estava acontecendo.
 
-Na minha cabeça, sempre preocupada em fazer as coisas de forma rápida e objetiva, faltou sensibilidade para perceber o que estava acontecendo.
+Talvez eu não tenha tido essa sensibilidade justamente porque, muitas vezes, sou eu a pessoa que gasta tempo descascando e cortando o alho da maneira mais demorada e mais difícil, acreditando que isso produzirá um resultado melhor. (Esse parágrafo não é sobre alho, rs)
 
-Talvez eu não tenha tido essa sensibilidade justamente porque, muitas vezes, sou eu a pessoa que gasta tempo descascando e cortando o alho da maneira mais demorada e mais difícil, acreditando que isso produzirá um resultado melhor.
-
-A diferença essencial é que, no caso dela, o valor não estava no produto final. Estava no processo. Estava no meio do caminho.
+A diferença essencial é que, no caso dela, o valor não estava no produto final. Estava no processo, na circunstância ao redor quando ela começava os preparativos da farofa.
 
 Justamente por não haver uma diferença relevante entre fazer da forma rápida e fazer da forma demorada, por que ela não poderia escolher a forma mais demorada e, ao mesmo tempo, conversar, conviver e aproveitar aquele momento?
 
@@ -88,13 +94,11 @@ Acho que o ponto é que só conseguimos afirmar que algo não vale o tempo inves
 
 Acontece que cozinhar é o meu hobby. Por isso, pude me dar ao luxo de levar quase 20 anos para aprender. Para ela, de alguma forma, também.
 
-No trabalho, não necessariamente temos esse luxo.
+## Nem tudo precisa ser descoberto sozinho
 
-No trabalho, às vezes precisamos confiar na experiência de quem já faz farofa de alho há mais tempo do que nós e simplesmente aceitar que determinado esforço não fará diferença.
+No trabalho, não necessariamente temos esse luxo... às vezes precisamos confiar na experiência de quem já faz farofa de alho há mais tempo do que nós e simplesmente aceitar que determinado esforço não fará diferença.
 
-Não naquele momento. Não para o resultado esperado.
-
-Não para o almoço de domingo. Não para o que era necessário agora...
+Não naquele momento. Não para o resultado esperado. Não para um almoço de terça..
 
 Quando nos recusamos a aceitar isso e insistimos em descobrir tudo sozinhos, acabamos exatamente na mesma posição em que eu acreditava que minha sogra estava.
 
