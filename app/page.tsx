@@ -1,8 +1,11 @@
 import Link from "next/link";
-import Image from "next/image";
-import farofaImage from "../blog/posts/farofa_img.png";
+import { ArticleCard } from "@/components/article-card";
+import { getAllPosts } from "@/lib/posts";
 
 export default function HomePage() {
+  const posts = getAllPosts();
+  const featuredPost = posts.find((post) => post.featured) ?? posts[0];
+
   return (
     <>
       <section className="shell intro" aria-labelledby="intro-title">
@@ -20,14 +23,7 @@ export default function HomePage() {
         <div className="sectionContent">
           <h2 id="writing-title">Notes and articles</h2>
           <p>Essays, technical notes, and practical observations about work, learning, data, and the processes behind what we make.</p>
-          <Link className="articleCard articleCardCompact" href="/writing/a-farofa-de-alho/">
-            <span className="articleCardImage"><Image src={farofaImage} alt="Ilustração em lápis de cor de um prato de farofa de alho" /></span>
-            <span className="articleCardBody">
-              <span className="mono">ESSAY · 22 JUL 2026</span>
-              <strong>A farofa de alho</strong>
-              <span>Sobre tempo, processo e o que realmente faz diferença no resultado.</span>
-            </span>
-          </Link>
+          {featuredPost && <ArticleCard post={featuredPost} compact />}
           <Link className="textLink" href="/writing/">Visit the writing archive →</Link>
         </div>
       </section>

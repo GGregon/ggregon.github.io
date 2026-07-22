@@ -12,3 +12,4 @@ coverage/
 *.out
 *.synctex.gz
 *.tsbuildinfo
+public/post-assets/

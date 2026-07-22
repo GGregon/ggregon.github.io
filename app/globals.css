@@ -56,7 +56,7 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .emptyState p { margin: 0; color: var(--muted); }
 .textLink { color: var(--accent); font-weight: 600; text-decoration: none; }
 .articleCard { display: grid; grid-template-columns: minmax(220px, 5fr) 7fr; color: inherit; border-block: 1px solid var(--rule); text-decoration: none; }
-.articleCardImage { min-height: 280px; display: grid; place-items: center; overflow: hidden; background: linear-gradient(145deg, var(--accent-soft), var(--soft)); color: var(--accent); }
+.articleCardImage { position: relative; min-height: 280px; display: grid; place-items: center; overflow: hidden; background: linear-gradient(145deg, var(--accent-soft), var(--soft)); color: var(--accent); }
 .articleCardImage img { width: 100%; height: 100%; object-fit: cover; }
 .articleCardBody { padding: clamp(1.5rem, 4vw, 3rem); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
 .articleCardBody .mono { color: var(--accent); }
@@ -86,11 +86,20 @@ a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: .22em
 .articleHeader h1 { margin: 1.25rem 0 1.5rem; font-family: var(--serif); font-size: clamp(3.8rem, 9vw, 7rem); line-height: .94; font-weight: 400; letter-spacing: -.055em; }
 .articleDek { max-width: 580px; color: var(--secondary); font-size: 1.15rem; }
 .articleMeta { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--rule); color: var(--muted); }
-.articleHero { margin: 0 0 clamp(3rem, 7vw, 5rem); overflow: hidden; background: var(--soft); }
-.articleHero img { width: 100%; height: auto; display: block; }
+.articleHero { position: relative; aspect-ratio: 3 / 2; margin: 0 0 clamp(3rem, 7vw, 5rem); overflow: hidden; background: var(--soft); }
+.articleHero img { object-fit: cover; }
 .articleBody { font-family: var(--serif); font-size: clamp(1.15rem, 2.2vw, 1.3rem); line-height: 1.75; }
 .articleBody p { margin: 0 0 1.55em; }
 .articleBody p:first-child::first-letter { float: left; margin: .08em .12em 0 0; color: var(--accent); font-size: 4.2em; line-height: .75; }
+.articleBody h2, .articleBody h3 { margin: 2.2em 0 .75em; line-height: 1.15; font-weight: 400; letter-spacing: -.025em; }
+.articleBody h2 { font-size: 2rem; }
+.articleBody h3 { font-size: 1.55rem; }
+.articleBody ul, .articleBody ol { margin: 0 0 1.55em; padding-left: 1.4em; }
+.articleBody blockquote { margin: 2em 0; padding-left: 1.25em; border-left: 3px solid var(--accent); color: var(--secondary); font-style: italic; }
+.articleBody a { color: var(--accent); }
+.articleInlineImage { position: relative; aspect-ratio: 3 / 2; width: min(100vw - 36px, 860px); margin: 2.5em 50%; display: block; overflow: hidden; transform: translateX(-50%); background: var(--soft); }
+.articleInlineImage img { object-fit: contain; }
+.articleImageCaption { position: absolute; right: 0; bottom: 0; left: 0; padding: .65rem .85rem; background: color-mix(in srgb, var(--ink) 82%, transparent); color: white; font-family: var(--sans); font-size: .75rem; line-height: 1.4; }
 .articleBack { display: inline-block; margin-top: 3rem; color: var(--accent); font-family: var(--sans); font-size: .9rem; font-weight: 600; text-decoration: none; }
 
 .resumeList { margin: 5rem 0 0; border-top: 1px solid var(--ink); }

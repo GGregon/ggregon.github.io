@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import Image from "next/image";
-import farofaImage from "../../blog/posts/farofa_img.png";
+import { ArticleCard } from "@/components/article-card";
+import { getAllPosts } from "@/lib/posts";
 
 export const metadata: Metadata = {
   title: "Writing",
@@ -10,6 +9,8 @@ export const metadata: Metadata = {
 };
 
 export default function WritingPage() {
+  const posts = getAllPosts();
+
   return (
     <section className="shell archivePage">
       <header className="archiveHeader">
@@ -18,15 +19,7 @@ export default function WritingPage() {
         <p>Short notes and longer articles about building data systems, working with analytical products, and learning from technical decisions.</p>
       </header>
       <div className="archiveList" aria-label="Published articles">
-        <Link className="articleCard" href="/writing/a-farofa-de-alho/">
-          <span className="articleCardImage"><Image src={farofaImage} alt="Ilustração em lápis de cor de um prato de farofa de alho" /></span>
-          <span className="articleCardBody">
-            <span className="mono">ESSAY · 22 JUL 2026</span>
-            <strong>A farofa de alho</strong>
-            <span>Sobre tempo, processo e o que realmente faz diferença no resultado.</span>
-            <span className="articleCardLink">Read article →</span>
-          </span>
-        </Link>
+        {posts.map((post) => <ArticleCard post={post} key={post.slug} />)}
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ A small personal website and future writing archive built with Next.js and expor
 ```text
 app/                 Pages, shared layout, metadata, sitemap, and visual system
 .github/workflows/   GitHub Pages deployment
-blog/posts/          Article drafts that are not published yet
+blog/posts/          One self-contained folder per article
 assets/docs/         Résumé source drafts
 ```
 
@@ -36,16 +36,19 @@ Or run all three checks with `npm run check`.
 
 The static production site is written to `out/`.
 
-## Writing the first article
+## Writing an article
 
-The writing archive is intentionally empty. When the first article is ready:
+Copy `blog/posts/_template/` to a folder named with the article slug. Keep the article text and every related image together:
 
-1. Add a static route such as `app/writing/my-article/page.tsx`.
-2. Write the article with semantic headings, paragraphs, lists, figures, and citations.
-3. Add the article entry to `app/writing/page.tsx`.
-4. Add its URL to `app/sitemap.ts`.
+```text
+blog/posts/my-article/
+├── index.md
+├── cover.jpg
+└── images/
+    └── example.jpg
+```
 
-This direct approach is appropriate while the archive is small. Introduce Markdown or MDX only when multiple real articles make a content pipeline useful.
+Complete the frontmatter in `index.md` and set `published: true` when the article is ready. Published posts automatically appear in the archive, receive a `/writing/<slug>/` route, and are added to the sitemap. See `blog/README.md` for image syntax and the complete workflow.
 
 ## GitHub Pages
 

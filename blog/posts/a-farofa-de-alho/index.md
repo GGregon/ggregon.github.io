@@ -1,3 +1,16 @@
+---
+title: "A farofa de alho"
+date: "2026-07-22"
+description: "Sobre tempo, processo e o que realmente faz diferença no resultado."
+category: "Cozinha & trabalho"
+author: "Gabriel Gregon"
+language: "pt-BR"
+cover: "cover.png"
+coverAlt: "Ilustração em lápis de cor de um prato de farofa de alho, com um sol e um coração"
+published: true
+featured: true
+---
+
 Eu gosto muito de cozinhar. Cozinho praticamente desde os meus 13 anos de idade. De lá para cá, já se passaram quase 20 anos.
 
 Nesse tempo, posso dizer que experimentei de tudo. Já queimei comida, já me queimei, já fiz comida ruim e já joguei comida fora. Diria que comecei a acertar meus pratos com mais consistência somente nos últimos cinco anos.
